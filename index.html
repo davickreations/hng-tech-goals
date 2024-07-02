@@ -10,6 +10,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
 
 
+     <!-- BOXICON CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+     <!-- FONTAWESOME CSS -->
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,27 +27,116 @@
 </head>
 
 <body>
+    <header>
+        <div class="main-img"><img src="images/Slack Profile.jpg" alt="Obinyan Victory" class="profile-pic"></div>
+
+        <ul class="navlist">
+            <!-- <li><a href="#home" class="active">Home<div class="line"></div></a></li> -->
+            <li><a href="https://hng.tech/learn" data-testid="hngLink">Learn more about HNG</a></li>
+            <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+            <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+        </ul>
+
+        <div class="h-main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
     <main>
-        <div class="slack-profile-card">
-            <div class="profile-img">
-                <img src="images/Slack Profile.jpg" alt="Slack Profile Picture" class="profile-pic"
+
+        <section class="hero section">
+            <div class="hero-content">
+                <h3>Hi, Welcome</h3>
+                <h2 data-testid="slackDisplayName">Obinyan Victory</h2>
+                <h3>I'm an Intren Frontend Developer at HNG</h3>
+                <p>My name is Obinyan Victory Osemudiamen, and I am a passionate web developer based in Edo State,
+                    Nigeria.
+                    With a strong foundation in HTML, CSS, and JavaScript, I am excited to further enhance my skills and
+                    explore new technologies through the HNG Internship. This prestigious program is an incredible
+                    opportunity for me to learn and grow as a developer, working alongside talented individuals and
+                    industry
+                    experts. At HNG, I look forward to mastering ReactJS, contributing to open-source projects, and
+                    collaborating on innovative digital solutions that will make a significant impact in the tech
+                    community.
+                </p>
+
+                <div class="slack-data">
+                    <p>Email: <span data-testid="slackEmail">
+                            <a href="mailto:davickreations2@gmail.com">davickreations2@gmail.com</a></span></p>
+                    <p>Current Time (UTC): <span data-testid="currentTimeUTC" class="time"></span></p>
+                    <p>Current Day: <span data-testid="currentDay" class="day"></span></p>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="images/Slack Profile.jpg" alt="Obinyan Victory" class="profile-pic"
                     data-testid="slackProfilePicture">
             </div>
-            <div class="title">
-                <h2 data-testid="slackDisplayName">Obinyan Victory</h2>
-                <p>Email: <span data-testid="slackEmail"><a
-                            href="mailto:davickreations2@gmail.com">davickreations2@gmail.com</a></span></p>
-                <p>Current Time (UTC): <span data-testid="currentTimeUTC" class="time"></span></p>
-                <p>Current Day: <span data-testid="currentDay" class="day"></span></p>
-                <div class="links">
-                    <a href="https://hng.tech/learn" data-testid="hngLink">Learn more about HNG</a>
-                    <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
-                    <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+
+        </section>
+
+        <section class="goals-section section">
+            <div class="goals-container">
+                <span>My Goals In Two Years</span>
+            </div>
+
+            <div class="goals-card">
+                <div class="goals-content">
+                    <h3>Master ReactJS and build complex web applications.</h3>
+                    <p>
+                        My goal is to dive deep into ReactJS and use it to build intricate and dynamic web applications.
+                        React’s component-based structure and powerful state management will help me craft interactive
+                        and scalable user interfaces. With a strong grasp of React, I aim to create high-performance
+                        applications that not only function smoothly but also provide a fantastic user experience.
+                    </p>
                 </div>
 
+                <div class="goals-content">
+                    <h3>Master ReactJS and build complex web applications.</h3>
+                    <p>
+                        My goal is to dive deep into ReactJS and use it to build intricate and dynamic web applications.
+                        React’s component-based structure and powerful state management will help me craft interactive
+                        and scalable user interfaces. With a strong grasp of React, I aim to create high-performance
+                        applications that not only function smoothly but also provide a fantastic user experience.
+                    </p>
+                </div>
+
+                <div class="goals-content">
+                    <h3>Learn More About Tailwind CSS and Bootstrap</h3>
+                    <p>
+                        I plan to explore Tailwind CSS and Bootstrap to enhance my frontend design skills. Tailwind’s
+                        utility-first approach and Bootstrap’s component-based framework will allow me to build visually
+                        appealing and responsive web interfaces quickly. Understanding these tools will help me create
+                        stylish, consistent designs and improve my ability to deliver polished, user-friendly websites.
+                    </p>
+                </div>
+
+                <div class="goals-content">
+                    <h3>Master ReactJS and build complex web applications.</h3>
+                    <p>
+                        My goal is to dive deep into ReactJS and use it to build intricate and dynamic web applications.
+                        React’s component-based structure and powerful state management will help me craft interactive
+                        and scalable user interfaces. With a strong grasp of React, I aim to create high-performance
+                        applications that not only function smoothly but also provide a fantastic user experience.
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <ul class="hng-links">
+                <<li><a href="https://hng.tech/learn" data-testid="hngLink">Learn more about HNG</a></li>
+                <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+            </ul>
+            <p>&copy; 2024 Obinyan Victory Osemudiamen. All rights reserved.</p>
+            <p>Based in Edo State, Nigeria.</p>
+        </div>
+    </footer>
+    
 
     <script src="main.js"></script>
 </body>
